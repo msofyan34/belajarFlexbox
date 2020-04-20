@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flexbox</title>
+    <style>
+        header{
+            display: flex;
+            flex-basis: 50%;
+            height: 100px;
+        }
+
+        .logo{
+            flex-grow: 1;
+            background-color: #333;
+            color: #fff;
+            padding-left: 15px;
+        }
+
+        nav{
+            flex-grow: 1;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav ul{
+            text-align: right;
+            padding-right: 20px;
+            padding-top: 25px;
+        }
+
+        nav li{
+            display: inline;
+            text-decoration: none;
+            padding-right: 10px;
+        }
+
+        #content{
+            margin-top: 50px;
+        }
+
+        footer{
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        @media screen and (max-width: 1000px){
+            header{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .logo{
+                flex-grow: 1;
+            }
+
+            nav{
+                flex-grow: 1;
+                display: sticky;
+                top: 0;
+            }
+
+            nav ul{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Belajar Flexbox</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href=""></a>Menu1</li>
+                <li><a href=""></a>Menu2</li>
+                <li><a href=""></a>Menu3</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article class="article1">
+                <h3>Judul 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tempora assumenda pariatur autem distinctio neque eveniet, eius est, inventore fuga in iure impedit, voluptatem ducimus animi placeat incidunt vitae modi quidem dolores aut? Id dignissimos ab obcaecati, maiores eveniet tenetur accusamus quas distinctio. Vitae qui adipisci excepturi, ratione nulla odit sapiente voluptatibus hic impedit velit reprehenderit dolores rerum accusamus voluptas ipsam earum eligendi ipsa! Eum eius iusto repudiandae officiis, ipsum consectetur minus maiores, temporibus sapiente ut doloremque incidunt voluptatibus in qui vitae praesentium modi nemo cupiditate expedita, a quae sequi optio rem. Deleniti nisi id laboriosam aliquam eaque dolorum quo?</p>
+            </article>
+
+            <article class="article2">
+                <h3>Judul 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit alias tempora totam voluptates laboriosam incidunt neque, animi illum. Corrupti ab quo rerum illo quod modi eum, ullam quam maiores reprehenderit quasi veniam nulla quibusdam molestias placeat exercitationem? Totam, sint quos velit quo cumque fugiat quaerat dolore minus blanditiis eaque corrupti temporibus cum ab doloremque tempore rerum necessitatibus neque. Corrupti mollitia iste, eius soluta, quod neque amet deserunt sed quo illum libero laboriosam laudantium officia. Esse perferendis inventore distinctio veritatis harum vitae, provident quibusdam architecto sunt quam labore eaque error minima reprehenderit tenetur! Deserunt iusto laboriosam delectus facere cumque nam odit!</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Belajar Flexbox</p>
+    </footer>
+</body>
+</html>
